@@ -1,2 +1,2 @@
 # cpp_basic
-cpp basic studies 
+this repo is for studying cpp,
