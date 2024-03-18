@@ -69,7 +69,7 @@ T square(T a){}
 
 int main(void){
 square<int>(3);
-square<double>(3.4);
+square<double>(3.4);}
 이렇게 하나만 만들어둔다  
 
 3/10 p.21
@@ -80,3 +80,4 @@ auto add2(int a, int b) ->int  //이런식으로 표기. 리턴값을 뒤에 적
 {
     return a+b; 
 }
+
