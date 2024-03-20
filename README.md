@@ -65,12 +65,38 @@ double square(doublea a){}
 
 // 템플릿 인스턴스화
 template<typename T>
+template<class T> // 똑같
 T square(T a){}
 
 int main(void){
 square<int>(3);
 square<double>(3.4);}
 이렇게 하나만 만들어둔다  
+
+# 함수 템플릿 만드는법
+c++ 20 부터는
+auto square(auto a)
+{
+    return a*a; 
+} // 이방식이 가능해짐 
+
+# inline 함수
+함수 호출 코드를"함수의 기계어 코드로 전환"
+속도가 빨라짐
+inline int Add2(int a, int b)
+{
+    return a+b;
+}
+
+int main(){
+    int ret2 = Add2(1,2);
+}
+
+# linkage
+일반 함수 말고 
+inline 함수나 template함수는 header 파일에 선언을 해버려야함.
+
+
 
 3/10 p.21
 int add1(int a, int b) // 리턴값을 앞에 적어둠. 
