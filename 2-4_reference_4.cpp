@@ -5,7 +5,8 @@
 
 // c언어 버전
 void swap(int* p1, int* p2){
-    int temp = *p1;
+    int temp = 0;
+    temp = *p1;
     *p1 = *p2 ;
     *p2= temp;    
 }
@@ -30,7 +31,7 @@ namespace utils
 int main()
 {
     int x= 10, y=20;
-    //swap(&x, &y);  C언어버전
+    swap(&x, &y); // C언어버전
     swap(x,y);
     utils::swap(x,y);
     std::swap(x,y); // algorithm 에 들어있음 사실 
