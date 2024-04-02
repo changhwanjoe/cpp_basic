@@ -1,9 +1,10 @@
 // 4.1 page 30.
 // pointer 0이 갖는 문제점 
+
 int main()
 #include <iostream>
 /*
-#ifdef __cplusplus
+#ifdef __cplusplus // 모든 cpp 컴파일러에는 얘가 정의되어 있음. cpp 컴파일러가 있는지확인하기 위한 용도로 씀
 //	#define NULL 0
 	#define NULL 0L
 #else
@@ -13,7 +14,6 @@ int main()
 //함수 오버로딩
 void foo(int   n) { std::cout << "int"   << std::endl;}
 void foo(void* p) { std::cout << "void*" << std::endl;}
-
 void goo(char* p) { std::cout << "char*" << std::endl;}
 
 int main()
