@@ -1,3 +1,6 @@
+// NULLPTR #2 
+// 4.3 page 31
+
 #include <iostream>
 
 void foo(int)    { std::cout << "int"    << std::endl;}
