@@ -1,3 +1,5 @@
+// explicit casting #2 
+// 4.5
 int main()
 {
 	const int c = 10;
@@ -10,4 +12,5 @@ int main()
 
 	char* p2 = reinterpret_cast<char*>( const_cast<int*>(&c) );
 	char* p3 = const_cast<char*>( reinterpret_cast<const char*>(&c) );
+//둘다 동일한 의미이다. 
 }
