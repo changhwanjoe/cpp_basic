@@ -1,3 +1,5 @@
+//03.2 object oriented programming
+// constructor, destructor
 #include <iostream>
 #include <string>
 
@@ -8,15 +10,14 @@ private:
 	int         age;
 
 public:
-//	void init()
-	Person()
+	Person() //생성자
 	{
 		name = "kim";
 		age = 20;
 		std::cout << "Constructor"
 						 << std::endl;
 	}
-	~Person()
+	~Person() // 소멸자. 객체가 파괴될때
 	{
 		std::cout << "Destructor" << std::endl;
 	}
@@ -24,9 +25,7 @@ public:
 
 int main()
 {
-//	Person p = {"kim", 25};
 	Person p;
-//	p.init();
 	std::cout << "____" << std::endl;
 
 }

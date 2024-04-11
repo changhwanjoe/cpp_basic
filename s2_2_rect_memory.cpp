@@ -1,3 +1,5 @@
+// 03.2 Object Oriented Programming
+// object, memory,layout
 #include <iostream>
 
 struct Rect
@@ -18,6 +20,7 @@ int main()
 	Rect rc3 = {3, 3, 8, 8};
 
 	std::cout << sizeof(rc1) << std::endl;
+	//16
 
 	rc1.draw(); 
 	rc2.draw();

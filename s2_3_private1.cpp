@@ -1,3 +1,6 @@
+// 03.2 Object Oriented Programming
+// Private, public
+
 #include <string>
 
 //struct Person
@@ -18,6 +21,6 @@ public:
 int main()
 {
 	Person p;
-//	p.age = -10; // error
+//	p.age = -10; // 실수로 잘못 넣었을때. error
 	p.setAge(-10);
 }

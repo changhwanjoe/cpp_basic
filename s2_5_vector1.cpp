@@ -2,7 +2,7 @@
 
 int main()
 {
-//	int arr[5];
+	int arr[5]; // 일반적인 배열은 크기를 바꿀수가 없다.
 
 	int* buff = new int[5];
 

@@ -1,3 +1,5 @@
+// c++ 언어에서만 가능한 구조체 안에 함수 넣기.
+
 #include <iostream>
 
 struct Rect
@@ -19,9 +21,6 @@ struct Rect
 int main()
 {
 	Rect rc = {1, 1, 10, 10};
-
-//	int n = getRectArea(rc);
-//	drawRect(rc);
 
 	int n = rc.getArea();
 	rc.draw();
