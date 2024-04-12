@@ -1,9 +1,10 @@
+//vector 를 템플릿으로 바꾸기 
 #include <iostream>
 
 template<class T> 
 class vector
 {
-	T* buff;
+	T* buff; //템플릿 도입
 	int  size;
 public:
 	vector(int sz) 
@@ -37,6 +38,8 @@ public:
 int main()
 {
 	vector<double> v(5);
+	vector<int> v(5);
+
 
 	v.setAt(0, 3.4);
 

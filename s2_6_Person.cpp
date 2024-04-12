@@ -1,5 +1,5 @@
-#include "Person.h"
-
+//#include "Person.h"
+#include "s2_6_Person.h"
 Person::Person(const std::string& n, int a)
 {
 	name = n;
