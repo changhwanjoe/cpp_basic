@@ -12,17 +12,17 @@ public:
 		xpos = x;
 		ypos = y;
 	}
-	void print() 
+	void print() const // 멤버 변수 값 바꾸지 않겠다. 호출 할 수 있게 해달라.
 	{
+//		xpos = 10; // error 바꿀수 없음
 		std::cout << xpos << ", " << ypos << std::endl;
 	}
 };
 int main()
 {
-//	Point pt(1, 2);
 	const Point pt(1, 2);
 
-//	pt.xpos = 10;   // error. public 이지만 상수이므로
-//	pt.set(10, 20); // error. 
-	pt.print();     // error
+//	pt.set(10, 20); // error
+
+	pt.print();     // ok
 }

@@ -10,9 +10,9 @@ public:
 };
 
 //void foo(Rect r) // call by value : 복사본 오버헤드
-void foo(const Rect& r)
+void foo(const Rect& r) // const 객체, 상수. 
 {
-	int area = r.getArea(); // ????
+	int area = r.getArea(); // ???? 에러남.
 }
 
 int main()

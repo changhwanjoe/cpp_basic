@@ -12,17 +12,17 @@ public:
 		xpos = x;
 		ypos = y;
 	}
-	void print() const 
+	void print() 
 	{
-//		xpos = 10; // error
 		std::cout << xpos << ", " << ypos << std::endl;
 	}
 };
 int main()
 {
-	const Point pt(1, 2);
+//	Point pt(1, 2);
+	const Point pt(1, 2);//상수 객체, xy값 못바꾼다. 
 
-//	pt.set(10, 20); // error
-
-	pt.print();     // ok
+//	pt.xpos = 10;   // error. public 이지만 상수이므로
+//	pt.set(10, 20); // error. 
+	pt.print();     // error
 }
