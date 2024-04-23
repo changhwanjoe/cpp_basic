@@ -21,7 +21,7 @@ public:
 
 int main()
 {
-    vector<Shape*> v;
+    vector<Shape*> v; // upcasting 의 장점 
 }
 
 

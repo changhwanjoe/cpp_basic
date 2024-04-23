@@ -12,7 +12,7 @@ public:
 
 int main()
 {
-    // ´ÙÀ½Áß ¿¡·¯¸¦ ¸ðµÎ °í¸£¼¼¿ä
+    // ë‹¤ìŒì¤‘ ì—ëŸ¬ë¥¼ ëª¨ë‘ ê³ ë¥´ì„¸ìš”
     //Animal a;   // error
     Dog    d;   // ok
 }

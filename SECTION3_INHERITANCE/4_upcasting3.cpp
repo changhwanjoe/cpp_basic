@@ -9,7 +9,7 @@ public:
     int x, y, w, h;
 };
 
-// ÀÎÀÚ·Î Àü´ŞµÈ µµÇüÀ» °ËÁ¤»öÀ¸·Î º¯°æÇÏ´Â ÇÔ¼ö
+// ì¸ìë¡œ ì „ë‹¬ëœ ë„í˜•ì„ ê²€ì •ìƒ‰ìœ¼ë¡œ ë³€ê²½í•˜ëŠ” í•¨ìˆ˜
 void changeBlack(Shape* p)
 {
     p->color = 0;
@@ -25,8 +25,8 @@ int main()
     Rect r;
     changeBlack(&r);
     
-    Rect* buffer[10]; // »ç°¢Çü¸¸ º¸°ü
-    Shape* buffer[10]; // ¸ğµç µµÇü º¸°ü
+    Rect* buffer[10]; // ì‚¬ê°í˜•ë§Œ ë³´ê´€
+    Shape* buffer[10]; // ëª¨ë“  ë„í˜• ë³´ê´€
 }
 
 
